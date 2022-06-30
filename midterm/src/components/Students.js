@@ -1,5 +1,6 @@
 import React from 'react'
 import Cards from './Cards';
+import '../Styling.css';
 
 function Students(props) {
 
@@ -30,12 +31,12 @@ function Students(props) {
         }
       ];    
 
-      const students = cardInfo.map(student => <Cards key={student.name} student={student}/>)
+      const studentProfile = cardInfo.map(student => <Cards key={student.name} student={student}/>)
 
   return (
     <div>
       <h1>Students List</h1>
-      <div className='cardBody'>{students}</div>
+      <div className='cardCollection'>{studentProfile}</div>
       </div>
   )
 }

@@ -4,10 +4,10 @@ import {Button} from 'react-bootstrap';
 
 function Cards({student}) {
     return (
-        <div className='cardProfile'>
-            <Card style={{ width: '18rem' }}>
+        <div className='cardIndividual'>
+            <Card className='cardInfo' style={{ width: '18rem' }}>
                 <Card.Img className="img" variant="top" src={student.image} />
-                <Card.Body className="card-Body">
+                <Card.Body className="cardText">
                     <Card.Title>{student.name}</Card.Title>
                     <Card.Text>{student.gpa}</Card.Text>
                     <Button variant="primary">Grade</Button>

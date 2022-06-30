@@ -1,0 +1,22 @@
+body {
+    margin:2%;
+}
+
+.cardCollection {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1px;
+}
+
+.cardIndividual {
+    text-align: center;
+    margin: .5%;
+    border: 1px solid black;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+.card{
+    margin:auto;
+}
